@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+/* Global variables */
+:root {
+  --font-family: 'Montserrat', sans-serif;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-gray: #5A5A5A;
+  --color-dark: #333;
+  --color-border: #eee;
+  --color-purple: #5414a4;
+  --color-blue: #4285F4;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-white);
+  color: var(--color-dark);
+}
+
+
+header {
+  width: 100%;
+  background-color: var(--color-white);
+  border-bottom: 1px solid var(--color-border);
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Left-header: groups the logo and menu so they are close together */
+.left-header {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+/* Menu items */
+.nav-menu li a {
+  text-decoration: none;
+  color: var(--color-gray);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.nav-menu li a:hover {
+  color: var(--color-black);
+}
+
+.login-signup {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: var(--color-purple);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.login img {
+  width: 20px; 
+  height: 20px;
+}
+
+.login:hover {
+  text-decoration: underline;
+}
+
+.signup-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 4px;
+  
+  color: var(--color-blue);
+  border: 1px solid var(--color-blue);
+  
+  background-color: var(--color-white);
+  font-size: 16px;
+}
+
+.signup-btn:hover {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+}

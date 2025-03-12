@@ -26,7 +26,6 @@ header {
     height: 40px;
 }
 
-/* Navigation Menu */
 .nav-menu {
     list-style: none;
     display: flex;
@@ -38,10 +37,24 @@ header {
     color: var(--color-gray);
     font-weight: 600;
     font-size: 16px;
+    transition: text-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .nav-menu li a:hover {
-    color: var(--color-black);
+    color: #fff;
+    animation: glowText 2s infinite alternate;
+}
+
+@keyframes glowText {
+  0% {
+    text-shadow: 0 0 5px #4285F4, 0 0 10px #4285F4, 0 0 15px #5414a4, 0 0 20px #5414F4;
+  }
+  50% {
+    text-shadow: 0 0 5px #5414a4, 0 0 10px #5414A4, 0 0 15px #4285F4, 0 0 20px #4285F4;
+  }
+  100% {
+    text-shadow: 0 0 5px #4285F4, 0 0 10px #4285F4, 0 0 15px #5414a4, 0 0 20px #5414F4;
+  }
 }
 
 /* Login and Sign In Area */
@@ -68,9 +81,17 @@ header {
 }
 
 .login:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
+.login span {
+    transition: text-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.login:hover span {
+    color: #fff;
+    animation: glowText 2s infinite alternate;
+}
 
 /* Glowing Sign In button */
 .glow-on-hover {
@@ -83,12 +104,9 @@ header {
     border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
-
-    /* Button default look */
     color: var(--color-blue);
     border: 1px solid var(--color-blue);
     background-color: var(--color-white);
-
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
@@ -99,22 +117,16 @@ header {
     left: -2px;
     width: calc(100% + 4px);
     height: calc(100% + 4px);
-
-    /* Animated gradient using website colors */
     background: linear-gradient(45deg, #5414a4, #4285F4, #5414a4);
     background-size: 400%;
     filter: blur(5px);
-
-    /* Inicialmente invisível */
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
-
     border-radius: 4px;
     z-index: -2;
     animation: glowing 20s linear infinite;
 }
 
-/* Glow on mouseover */
 .glow-on-hover:hover:before {
     opacity: 1;
 }
@@ -132,7 +144,6 @@ header {
     transition: background-color 0.3s ease-in-out;
 }
 
-/* When clicked, the background changes to gradient and the text turns white */
 .glow-on-hover:active:after {
     background: linear-gradient(45deg, #5414a4, #4285F4, #5414a4);
 }
@@ -145,4 +156,4 @@ header {
     0% { background-position: 0 0; }
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
-}  
+}

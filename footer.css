@@ -49,6 +49,7 @@ footer {
 
 .footer-links a:hover {
     color: var(--color-purple);
+    text-shadow: 0 0 8px #fff, 0 0 12px #fff;
 }
 
 .footer-columns {
@@ -58,8 +59,8 @@ footer {
 }
 
 .footer-column h3 {
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 22px;
+    font-weight: 400;
     line-height: 2;
     margin-bottom: 3em;
 }
@@ -85,6 +86,7 @@ footer {
 
 .footer-column ul li a:hover {
     color: var(--color-purple);
+    text-shadow: 0 0 8px #fff, 0 0 12px #fff;
 }
 
 .footer-bottom {

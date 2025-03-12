@@ -1,17 +1,14 @@
 footer {
     background: url('img/fundo-footer-teste-programador.png.jpg');
     background-size: cover;
-    
     padding: 90px 120px 40px 120px;
     color: var(--color-white);
     font-size: 14px;
 }
 
-/* Footer main container */
 .footer-container {
     max-width: 1200px;
     margin: 0 auto;
-    
     display: flex;
     align-items: flex-start;
 }
@@ -26,16 +23,10 @@ footer {
     margin-bottom: 16px;
 }
 
-.footer-logo span {
-    color: var(--color-purple);
-}
-
-/* Resolution Center and English links */
 .footer-links {
     list-style: none;
     padding: 0;
-    margin: 0;
-    margin-top: 2em;
+    margin: 2em 0 0 0;
 }
 
 .footer-links li {
@@ -49,7 +40,6 @@ footer {
     line-height: 1;
 }
 
-/* Icons before "Resolution Center" and "English" */
 .footer-icon {
     height: 1.2em;
     width: auto;
@@ -61,14 +51,12 @@ footer {
     color: var(--color-purple);
 }
 
-/* Section "About Us" / "Our product" */
 .footer-columns {
     display: flex;
     gap: 50px;
     margin-left: 120px;
 }
 
-/* Colum's titles*/
 .footer-column h3 {
     font-size: 18px;
     font-weight: 600;
@@ -99,26 +87,31 @@ footer {
     color: var(--color-purple);
 }
 
-/* Bottom bar */
 .footer-bottom {
     max-width: 1200px;
-    margin: 0 auto;
-    margin-top: 80px;
-    padding: 20px 120px 0 120px;
-    
+    margin: 80px auto 0 auto;
+    padding: 20px 0 0 0; 
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
 }
 
 .footer-bottom::before {
     content: "";
     position: absolute;
     top: 0;
-    left: 120px;
-    right: 120px;
+    left: 0; 
+    right: 0; 
     border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-bottom-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 120px;
 }
 
 .footer-bottom p {

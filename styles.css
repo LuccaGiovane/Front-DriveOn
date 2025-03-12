@@ -1,0 +1,26 @@
+/* styles.css */
+/* Global resets, variables, and base styles */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+:root {
+  --font-family: 'Montserrat', sans-serif;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-gray: #5A5A5A;
+  --color-dark: #333;
+  --color-border: #eee;
+  --color-purple: #5414a4;
+  --color-blue: #4285F4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-white);
+  color: var(--color-dark);
+}

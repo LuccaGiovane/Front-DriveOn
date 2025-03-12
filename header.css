@@ -1,0 +1,148 @@
+/* Header container and layout */
+header {
+    width: 100%;
+    background-color: var(--color-white);
+    border-bottom: 1px solid var(--color-border);
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Left-header: logo and navigation menu grouping */
+.left-header {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+/* Navigation Menu */
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: var(--color-gray);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.nav-menu li a:hover {
+    color: var(--color-black);
+}
+
+/* Login and Sign In Area */
+.login-signup {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Login link */
+.login {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: var(--color-purple);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.login img {
+    width: 20px;
+    height: 20px;
+}
+
+.login:hover {
+    text-decoration: underline;
+}
+
+
+/* Glowing Sign In button */
+.glow-on-hover {
+    position: relative;
+    z-index: 0;
+    display: inline-block;
+    padding: 8px 16px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+
+    /* Button default look */
+    color: var(--color-blue);
+    border: 1px solid var(--color-blue);
+    background-color: var(--color-white);
+
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.glow-on-hover:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+
+    /* Animated gradient using website colors */
+    background: linear-gradient(45deg, #5414a4, #4285F4, #5414a4);
+    background-size: 400%;
+    filter: blur(5px);
+
+    /* Inicialmente invisível */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+
+    border-radius: 4px;
+    z-index: -2;
+    animation: glowing 20s linear infinite;
+}
+
+/* Glow on mouseover */
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--color-white);
+    border-radius: 4px;
+    z-index: -1;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* When clicked, the background changes to gradient and the text turns white */
+.glow-on-hover:active:after {
+    background: linear-gradient(45deg, #5414a4, #4285F4, #5414a4);
+}
+
+.glow-on-hover:active {
+    color: #fff;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}  

@@ -1,0 +1,137 @@
+footer {
+    background: url('img/fundo-footer-teste-programador.png.jpg');
+    background-size: cover;
+    padding: 90px 120px 40px 120px;
+    color: var(--color-white);
+    font-size: 14px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+}
+
+.footer-logo {
+    flex: 1;
+}
+
+.footer-logo h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 2em 0 0 0;
+}
+
+.footer-links li {
+    margin-bottom: 1.2em;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: var(--color-white);
+    transition: color 0.3s;
+    line-height: 1;
+}
+
+.footer-icon {
+    height: 1.2em;
+    width: auto;
+    vertical-align: middle;
+    margin-right: 16px;
+}
+
+.footer-links a:hover {
+    color: var(--color-purple);
+    text-shadow: 0 0 8px #fff, 0 0 12px #fff;
+}
+
+.footer-columns {
+    display: flex;
+    gap: 50px;
+    margin-left: 120px;
+}
+
+.footer-column h3 {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 2;
+    margin-bottom: 3em;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    line-height: 1;
+    margin-bottom: 2em;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: var(--color-white);
+    transition: color 0.3s;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footer-column ul li a:hover {
+    color: var(--color-purple);
+    text-shadow: 0 0 8px #fff, 0 0 12px #fff;
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 80px auto 0 auto;
+    padding: 20px 0 0 0; 
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0; 
+    right: 0; 
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-bottom-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 120px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social a {
+    text-decoration: none;
+}
+
+.social-icon {
+    height: 16px;
+    width: auto;
+    vertical-align: middle;
+}

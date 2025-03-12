@@ -4,23 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <title>Driveon</title>
+    <link rel="icon" href="img/icon-page.png" type="image/png" />
+
     <!-- Global Styles -->
     <link rel="stylesheet" href="styles.css">
+
     <!-- Component-specific Styles -->
     <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
 </head>
 
 <body>
+    <!-- External JS file -->
+    <script src="import.js"></script>
 
     <!-- Header injection -->
     <div id="header-placeholder"></div>
-
-    <!-- Import external JS file -->
-    <script src="import.js"></script>
-
     <script>
         // Load header.html into the element
         importHTML('header.html', 'header-placeholder');
+    </script>
+
+    <div class="h1">asdasas</div>
+    <div class="h1">asdasas</div>
+    <div class="h1">asdasas</div>
+    <div class="h1">asdasas</div>
+    <div class="h1">asdasas</div>
+    <div class="h1">asdasas</div>
+    <div class="h1">asdasas</div>
+
+    <!-- Footer injection -->
+    <div id="footer-placeholder"></div>
+    <script>
+        // Load footer.html into the element
+        importHTML('footer.html', 'footer-placeholder');
     </script>
 
 </body>

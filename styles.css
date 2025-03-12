@@ -19,8 +19,21 @@
   box-sizing: border-box;
 }
 
+/* Para garantir que html e body ocupem 100% da altura da viewport */
+html, body {
+  height: 100%;
+}
+
+/* Configura o body para usar flexbox e organizar os elementos em coluna */
 body {
   font-family: var(--font-family);
   background-color: var(--color-white);
   color: var(--color-dark);
+  display: flex;
+  flex-direction: column;
+}
+
+/* O conteúdo principal deve ocupar o espaço disponível para empurrar o footer para o final */
+main {
+  flex: 1;
 }

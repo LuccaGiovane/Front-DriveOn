@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Driveon</title>
+    <title>DriveOn</title>
     <link rel="icon" href="img/icon-page.png" type="image/png" />
 
     <!-- Global Styles -->
@@ -11,7 +11,10 @@
 
     <!-- Component-specific Styles -->
     <link rel="stylesheet" href="header.css">
+
     <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="content.css">
+
 </head>
 
 <body>
@@ -25,13 +28,12 @@
         importHTML('header.html', 'header-placeholder');
     </script>
 
-    <div class="h1">asdasas</div>
-    <div class="h1">asdasas</div>
-    <div class="h1">asdasas</div>
-    <div class="h1">asdasas</div>
-    <div class="h1">asdasas</div>
-    <div class="h1">asdasas</div>
-    <div class="h1">asdasas</div>
+    <!-- Content injection -->
+    <div id="content-placeholder"></div>
+    <script>
+        // Load header.html into the element
+        importHTML('content.html', 'content-placeholder');
+    </script>
 
     <!-- Footer injection -->
     <div id="footer-placeholder"></div>

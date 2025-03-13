@@ -11,6 +11,8 @@
   --color-border: #eee;
   --color-purple: #5414a4;
   --color-blue: #4285F4;
+  --color-darker-blue: #596fee;
+  --color-lighter-blue: #2ce4fc;
 }
 
 * {

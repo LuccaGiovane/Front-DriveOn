@@ -1,0 +1,424 @@
+/* ==================== */
+/* Main section (FLEX)  */
+/* ==================== */
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 0 60px 80px;
+  min-height: 100vh;
+  background-color: var(--color-white);
+}
+
+.text-section {
+  max-width: 50%;
+}
+
+.text-section h1 {
+  font-size: 4rem;
+  color: var(--color-purple);
+  margin-bottom: 20px;
+  line-height: 1.2;
+  position: relative;
+}
+
+.text-section h1::after {
+  content: "";
+  display: block;
+  height: 1em;
+}
+
+.text-section p {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: var(--color-gray);
+  margin-bottom: 30px;
+}
+
+/* Discover button */
+.btn-discover {
+  display: inline-block;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  color: var(--color-white);
+  text-decoration: none;
+  background: linear-gradient(to right, var(--color-darker-blue), var(--color-lighter-blue));
+  transition: background 0.3s ease;
+}
+
+.btn-discover:hover {
+  background: var(--color-darker-blue);
+  animation: colorCycle 2.4s linear infinite;
+}
+
+@keyframes colorCycle {
+  0% {
+    background-color: var(--color-darker-blue);
+  }
+  50% {
+    background-color: var(--color-lighter-blue);
+  }
+  100% {
+    background-color: var(--color-darker-blue);
+  }
+}
+
+.image-section {
+  max-width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.image-section img {
+  width: 120%;
+  height: auto;
+  object-fit: cover;
+  transform: none;
+}
+
+/* ============================= */
+/* "How to get started?" section */
+/* ============================= */
+
+.get-started-section {
+  margin-top: 1em;
+  text-align: center;
+}
+
+.barra-e-titulo {
+  display: inline-block;
+  text-align: left;
+}
+
+.barra-colorida {
+  display: block;
+  margin: 0;
+  width: 120px;
+  height: auto;
+  margin-bottom: 2em;
+}
+
+.get-started-section h2 {
+  font-size: 2rem;
+  color: var(--color-purple);
+  margin: 0;
+}
+
+/* ================== */
+/* Four steps section */
+/* ================== */
+
+.four-steps-section {
+  padding: 60px 0;
+  background-color: var(--color-white);
+}
+
+.four-steps-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.step {
+  flex: 1 1 200px;
+  max-width: 250px;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.step img {
+  width: 180px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.step h3 {
+  font-size: 1.25rem;
+  color: var(--color-purple);
+  margin-bottom: 2em;
+}
+
+.step p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: var(--color-gray);
+}
+
+/* ======================= */
+/* Car on the side section */
+/* ======================= */
+
+.car-section {
+  display: flex;
+  align-items: center;   
+  background-color: var(--color-white); 
+  min-height: 100vh;
+  padding: 0;
+}
+
+.car-section__image-col {
+  flex: 0 0 50%;
+}
+
+.car-section__car-image {
+  width: 100%;
+  height: auto;
+  display: block; 
+}
+
+.car-section__content-col {
+  flex: 1;            
+  max-width: 600px;   
+  padding: 60px 20px; 
+  text-align: left;
+}
+
+.car-section__barra-image {
+  display: block;
+  margin: 0 0 1em 0; 
+  width: 120px;
+  height: auto;
+  margin-bottom: 6em;
+}
+
+.car-section__content-col h2 {
+  color: var(--color-gray);
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.car-section__content-col p {
+  color: var(--color-gray);
+  font-size: 1rem;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.car-section__learn-more {
+  text-decoration: none;
+  color: var(--color-blue);
+  font-weight: 600;
+  font-size: 16px;
+  transition: text-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.car-section__learn-more:hover {
+color: var(--color-white);
+animation: glowTextGradient 2s infinite alternate;
+}
+
+/* ============== */
+/* Safety Section */
+/* ============== */
+.safety-section {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  background-color: var(--color-white);
+  padding: 60px 0 60px 80px;
+  min-height: 100vh;
+  transform: translateY(-1rem);
+}
+
+.safety-section__content-col {
+  flex: 1;
+  max-width: 600px;
+  text-align: left;
+  margin-right: 20px;
+}
+
+.title-group {
+  transform: translateY(-3rem);
+}
+
+.safety-section__content-col h2 {
+  color: var(--color-purple);
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.safety-section__barra-image {
+  display: block;
+  width: 120px;
+  height: auto;
+  margin-bottom: 2em;
+  transform: translateY(-2rem);
+}
+
+.safety-section__content-col p {
+  color: var(--color-gray);
+  font-size: 1rem;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.guide-link-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.guide-link {
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--color-purple);
+  font-size: 1rem;
+  position: relative;
+  z-index: 2;
+}
+
+.guide-link-wrapper .guide-link:hover {
+  color: var(--color-white);
+  animation: glowTextGradient 2s infinite alternate;
+}
+
+.guide-link-underline {
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  z-index: 1;
+  background: url("img/linha-reta-teste-programador.png.jpg") no-repeat center;
+  background-size: 100% 100%;
+}
+
+.safety-section__learn-more {
+  text-decoration: none;
+  color: var(--color-blue);
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+.safety-section__learn-more:hover {
+color: var(--color-white);
+  animation: glowTextGradient 2s infinite alternate;
+}
+
+.safety-section__image-col {
+  flex: 0 0 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.safety-section__image {
+width: 95%;
+height: auto;
+display: block;
+}
+
+/* ==================== */
+/* Download App section */
+/* ==================== */
+
+.download-section {
+  position: relative;
+  width: 100%;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
+.download-section__bg-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.download-section__content {
+  position: absolute;
+  top: 180px;
+  right: 80px;
+  max-width: 600px;
+}
+
+.download-rectangle {
+  display: flex;
+  width: 130px;
+  height: 12px;
+  margin-bottom: 4rem;
+}
+
+.download-rectangle__gray {
+  width: 25%;
+  background-color: #ccc;
+}
+
+.download-rectangle__white {
+  width: 75%;
+  background-color: #fff;
+}
+
+.download-section__title {
+  color: var(--color-purple);
+  font-size: 1.8rem;
+  line-height: 1.2;
+  margin-bottom: 4rem;
+}
+
+.download-section__buttons {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.download-btn-black {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  padding: 14px 28px;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.download-btn-black:hover {
+  background-color: #000;
+  box-shadow: 0 0 8px 2px #fff, 0 0 16px 4px var(--color-blue);
+}
+
+.download-btn-black img {
+  height: 125%;
+  object-fit: contain;
+  display: block;
+}
+
+/* ======================== */
+/* Glow Effects - Keyframes */
+/* ======================== */
+@keyframes glowTextGradient {
+  0% {
+    text-shadow: 
+      0 0 5px var(--color-blue),
+      0 0 10px var(--color-blue),
+      0 0 15px var(--color-purple),
+      0 0 20px var(--color-purple);
+  }
+  50% {
+    text-shadow: 
+      0 0 10px var(--color-purple),
+      0 0 20px var(--color-purple),
+      0 0 30px var(--color-blue),
+      0 0 40px var(--color-blue);
+  }
+  100% {
+    text-shadow: 
+      0 0 5px var(--color-blue),
+      0 0 10px var(--color-blue),
+      0 0 15px var(--color-purple),
+      0 0 20px var(--color-purple);
+  }
+}

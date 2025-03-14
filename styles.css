@@ -15,6 +15,7 @@
   --color-lighter-blue: #2ce4fc;
 
   --padding-esquerdo: 3rem;
+  --padding-esquerdo-px: 105px;
 }
 
 * {

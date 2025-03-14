@@ -115,7 +115,7 @@
 /* ================== */
 
 .four-steps-section {
-  padding: 60px 0;
+  padding: 60px var(--padding-esquerdo-px) 60px var(--padding-esquerdo-px);
   background-color: var(--color-white);
 }
 
@@ -126,7 +126,7 @@
   flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
-  gap: 20px;
+  gap: 15px;
 }
 
 .step {
@@ -137,13 +137,13 @@
 }
 
 .step img {
-  width: 180px;
+  width: 175px;
   height: auto;
   margin-bottom: 20px;
 }
 
 .step h3 {
-  font-size: 1.25rem;
+  font-size: 1.20rem;
   color: var(--color-purple);
   margin-bottom: 2em;
 }

@@ -24,7 +24,17 @@
   --transition-duration: 0.3s;
   --transition-timing: ease-in-out;
   --gradient-angle: 45deg;
+
+  /* Variáveis específicas para o footer */
+  --font-size-footer: 14px;
+  --footer-horizontal-padding: 120px;
+  --footer-max-width: 1200px;
+  --footer-spacing-16: 16px;
+  --footer-text-shadow: 0 0 8px var(--color-white), 0 0 12px var(--color-white);
+  --footer-gap-columns: 50px;
+  --footer-social-gap: 15px;
 }
+
 
 * {
   margin: 0;

@@ -226,7 +226,7 @@ animation: glowTextGradient 2s infinite alternate;
   align-items: flex-end;
   justify-content: space-between;
   background-color: var(--color-white);
-  padding: 60px 0 60px 80px;
+  padding: 60px 0 60px 172px;
   min-height: 100vh;
   transform: translateY(-1rem);
 }
@@ -405,7 +405,7 @@ display: block;
   justify-content: center;
   margin-top: 5rem;
   margin-bottom: 5rem;
-  padding: 0 4rem 0 3rem;
+  padding: 0 4rem 0 var(--padding-esquerdo);
 }
 
 .registration-box {

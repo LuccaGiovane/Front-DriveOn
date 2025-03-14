@@ -1,9 +1,11 @@
-/* styles.css */
 /* Global resets, variables, and base styles */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 
 :root {
+  /* Font */
   --font-family: 'Montserrat', sans-serif;
+
+  /* Colors */
   --color-white: #fff;
   --color-black: #000;
   --color-gray: #5A5A5A;
@@ -14,7 +16,14 @@
   --color-darker-blue: #596fee;
   --color-lighter-blue: #2ce4fc;
 
-  --padding-esquerdo: 3rem;
+  /* Transition and size */
+  --padding-left: 3rem;
+  --spacing-20: 20px;
+  --font-size-base: 16px;
+  --border-radius: 4px;
+  --transition-duration: 0.3s;
+  --transition-timing: ease-in-out;
+  --gradient-angle: 45deg;
 }
 
 * {
@@ -23,12 +32,12 @@
   box-sizing: border-box;
 }
 
-/* Para garantir que html e body ocupem 100% da altura da viewport */
+/* Just to ensure that html and body occupy 100% of the viewport height */
 html, body {
   height: 100%;
 }
 
-/* Configura o body para usar flexbox e organizar os elementos em coluna */
+/* Configure the body to use flexbox and organize elements in columns */
 body {
   font-family: var(--font-family);
   background-color: var(--color-white);
@@ -37,7 +46,7 @@ body {
   flex-direction: column;
 }
 
-/* O conteúdo principal deve ocupar o espaço disponível para empurrar o footer para o final */
+/* The main content take up the available space to push the footer to the end */
 main {
   flex: 1;
 }

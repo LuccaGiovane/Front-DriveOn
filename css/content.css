@@ -32,13 +32,11 @@
 .text-section p {
   font-size: 1rem;
   line-height: 1.4;
-  color: var(--color-text-gray); /* Alterado para a nova variável */
+  color: var(--color-text-gray);
   margin-bottom: var(--margin-bottom-30);
-  font-weight: bold; /* Adiciona o estilo bold */
+  font-weight: bold;
 }
 
-
-/* Discover button */
 .btn-discover {
   display: inline-block;
   padding: var(--btn-padding-vertical) var(--btn-padding-horizontal);

@@ -9,7 +9,6 @@ footer {
 .footer-container {
     max-width: var(--footer-max-width);
     margin: 0 auto;
-    /* Adiciona padding horizontal para unificar o espaçamento */
     padding: 0 var(--padding-left);
     display: flex;
     align-items: flex-start;
@@ -26,7 +25,6 @@ footer {
     margin-bottom: var(--footer-spacing-16);
 }
 
-/* Remove margens extras para que os itens fiquem mais próximos */
 .footer-links {
     list-style: none;
     padding: 0;
@@ -56,7 +54,6 @@ footer {
     text-shadow: var(--footer-text-shadow);
 }
 
-/* Removido margin-left e utilizando o gap do flex para espaçamento */
 .footer-columns {
     margin-top: 10px;
     display: flex;

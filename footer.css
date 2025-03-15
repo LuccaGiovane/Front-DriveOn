@@ -1,7 +1,7 @@
 footer {
     background: url('img/fundo-footer-teste-programador.png.jpg');
     background-size: cover;
-    padding: 90px var(--footer-horizontal-padding) 40px var(--footer-horizontal-padding);
+    padding: 90px 110px 40px 110px;
     color: var(--color-white);
     font-size: var(--font-size-footer);
 }
@@ -9,12 +9,15 @@ footer {
 .footer-container {
     max-width: var(--footer-max-width);
     margin: 0 auto;
+    /* Adiciona padding horizontal para unificar o espaçamento */
+    padding: 0 var(--padding-left);
     display: flex;
     align-items: flex-start;
 }
 
 .footer-logo {
     flex: 1;
+    margin-top: 5px;
 }
 
 .footer-logo h2 {
@@ -23,10 +26,11 @@ footer {
     margin-bottom: var(--footer-spacing-16);
 }
 
+/* Remove margens extras para que os itens fiquem mais próximos */
 .footer-links {
     list-style: none;
     padding: 0;
-    margin: 2em 0 0 0;
+    margin: 0;
 }
 
 .footer-links li {
@@ -52,17 +56,18 @@ footer {
     text-shadow: var(--footer-text-shadow);
 }
 
+/* Removido margin-left e utilizando o gap do flex para espaçamento */
 .footer-columns {
+    margin-top: 10px;
     display: flex;
     gap: var(--footer-gap-columns);
-    margin-left: var(--footer-horizontal-padding);
 }
 
 .footer-column h3 {
     font-size: 22px;
     font-weight: 400;
     line-height: 2;
-    margin-bottom: 3em;
+    margin-bottom: 1em;
 }
 
 .footer-column ul {
@@ -91,8 +96,8 @@ footer {
 
 .footer-bottom {
     max-width: var(--footer-max-width);
-    margin: 80px auto 0 auto;
-    padding: 20px 0 0 0; 
+    margin: 80px auto 0;
+    padding: 20px 110px 0 110px; 
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -103,8 +108,8 @@ footer {
     content: "";
     position: absolute;
     top: 0;
-    left: 0; 
-    right: 0; 
+    left: 45px; 
+    right: 45px; 
     border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -113,16 +118,18 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 var(--footer-horizontal-padding);
+    padding: 0 110px;
 }
 
 .footer-bottom p {
     margin: 0;
+    margin-left: -65px;
     font-size: var(--font-size-footer);
 }
 
 .footer-social {
     display: flex;
+    margin-right: -65px;
     gap: var(--footer-social-gap);
 }
 

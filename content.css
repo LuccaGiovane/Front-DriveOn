@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 60px 0 60px 80px;
+  padding: var(--spacing-60) 0 var(--spacing-60) 80px;
   min-height: 100vh;
   background-color: var(--color-white);
 }
@@ -18,7 +18,7 @@
 .text-section h1 {
   font-size: 4rem;
   color: var(--color-purple);
-  margin-bottom: 20px;
+  margin-bottom: var(--spacing-20);
   line-height: 1.2;
   position: relative;
 }
@@ -32,23 +32,25 @@
 .text-section p {
   font-size: 1rem;
   line-height: 1.4;
-  color: var(--color-gray);
-  margin-bottom: 30px;
+  color: var(--color-text-gray); /* Alterado para a nova variável */
+  margin-bottom: var(--margin-bottom-30);
+  font-weight: bold; /* Adiciona o estilo bold */
 }
+
 
 /* Discover button */
 .btn-discover {
   display: inline-block;
-  padding: 15px 30px;
+  padding: var(--btn-padding-vertical) var(--btn-padding-horizontal);
   border: none;
-  border-radius: 8px;
+  border-radius: var(--btn-border-radius);
   font-weight: 600;
   font-size: 1rem;
   cursor: pointer;
   color: var(--color-white);
   text-decoration: none;
   background: linear-gradient(to right, var(--color-darker-blue), var(--color-lighter-blue));
-  transition: background 0.3s ease;
+  transition: background var(--transition-duration) var(--transition-timing);
 }
 
 .btn-discover:hover {
@@ -115,7 +117,7 @@
 /* ================== */
 
 .four-steps-section {
-  padding: 60px 0;
+  padding: var(--spacing-60) 0;
   background-color: var(--color-white);
 }
 
@@ -126,7 +128,7 @@
   flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
-  gap: 20px;
+  gap: var(--spacing-20);
 }
 
 .step {
@@ -139,12 +141,13 @@
 .step img {
   width: 180px;
   height: auto;
-  margin-bottom: 20px;
+  margin-bottom: var(--spacing-20);
 }
 
 .step h3 {
   font-size: 1.25rem;
   color: var(--color-purple);
+  font-weight: bold;
   margin-bottom: 2em;
 }
 
@@ -152,6 +155,11 @@
   font-size: 0.95rem;
   line-height: 1.4;
   color: var(--color-gray);
+}
+
+.four-steps-section .step p {
+  font-weight: bold;
+  color: var(--color-text-gray);
 }
 
 /* ======================= */
@@ -171,7 +179,7 @@
 }
 
 .car-section__car-image {
-  width: 100%;
+  width: 108%;
   height: auto;
   display: block; 
 }
@@ -179,7 +187,7 @@
 .car-section__content-col {
   flex: 1;            
   max-width: 600px;   
-  padding: 60px 20px; 
+  padding: var(--car-content-padding-vertical) var(--car-content-padding-horizontal);
   text-align: left;
 }
 
@@ -192,30 +200,31 @@
 }
 
 .car-section__content-col h2 {
-  color: var(--color-gray);
+  color: var(--color-text-gray);
   font-size: 1.5rem;
-  margin-bottom: 20px;
+  margin-bottom: var(--spacing-20);
   line-height: 1.3;
 }
 
 .car-section__content-col p {
-  color: var(--color-gray);
-  font-size: 1rem;
+  color: var(--color-text-gray);
+  font-size: 1.15rem;
   line-height: 1.4;
-  margin-bottom: 20px;
+  font-weight: bold;
+  margin-bottom: var(--spacing-20);
 }
 
 .car-section__learn-more {
   text-decoration: none;
   color: var(--color-blue);
   font-weight: 600;
-  font-size: 16px;
-  transition: text-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
+  font-size: 1.15rem;
+  transition: text-shadow var(--transition-duration) var(--transition-timing), color var(--transition-duration) var(--transition-timing);
 }
 
 .car-section__learn-more:hover {
-color: var(--color-white);
-animation: glowTextGradient 2s infinite alternate;
+  color: var(--color-white);
+  animation: glowTextGradient 2s infinite alternate;
 }
 
 /* ============== */
@@ -226,7 +235,7 @@ animation: glowTextGradient 2s infinite alternate;
   align-items: flex-end;
   justify-content: space-between;
   background-color: var(--color-white);
-  padding: 60px 0 60px 172px;
+  padding: var(--spacing-60) 0 var(--spacing-60) var(--safety-padding-left);
   min-height: 100vh;
   transform: translateY(-1rem);
 }
@@ -235,7 +244,7 @@ animation: glowTextGradient 2s infinite alternate;
   flex: 1;
   max-width: 600px;
   text-align: left;
-  margin-right: 20px;
+  margin-right: var(--spacing-20);
 }
 
 .title-group {
@@ -245,7 +254,7 @@ animation: glowTextGradient 2s infinite alternate;
 .safety-section__content-col h2 {
   color: var(--color-purple);
   font-size: 1.8rem;
-  margin-bottom: 20px;
+  margin-bottom: var(--spacing-20);
   line-height: 1.2;
 }
 
@@ -258,10 +267,11 @@ animation: glowTextGradient 2s infinite alternate;
 }
 
 .safety-section__content-col p {
-  color: var(--color-gray);
-  font-size: 1rem;
+  color: var(--color-text-gray);
+  font-weight: bold;
+  font-size: 1.15rem;
   line-height: 1.4;
-  margin-bottom: 20px;
+  margin-bottom: var(--spacing-20);
 }
 
 .guide-link-wrapper {
@@ -273,7 +283,7 @@ animation: glowTextGradient 2s infinite alternate;
   font-weight: bold;
   text-decoration: none;
   color: var(--color-purple);
-  font-size: 1rem;
+  font-size: 1.15rem;
   position: relative;
   z-index: 2;
 }
@@ -298,25 +308,25 @@ animation: glowTextGradient 2s infinite alternate;
   text-decoration: none;
   color: var(--color-blue);
   font-weight: 600;
-  font-size: 1rem;
-  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+  font-size: 1.15rem;
+  transition: color var(--transition-duration) var(--transition-timing), text-shadow var(--transition-duration) var(--transition-timing);
 }
 
 .safety-section__learn-more:hover {
-color: var(--color-white);
+  color: var(--color-white);
   animation: glowTextGradient 2s infinite alternate;
 }
 
 .safety-section__image-col {
-  flex: 0 0 50%;
+  flex: 0 0 45%;
   display: flex;
   justify-content: flex-end;
 }
 
 .safety-section__image {
-width: 95%;
-height: auto;
-display: block;
+  width: 121%;
+  height: auto;
+  display: block;
 }
 
 /* ==================== */
@@ -352,12 +362,12 @@ display: block;
 
 .download-rectangle__gray {
   width: 25%;
-  background-color: #ccc;
+  background-color: var(--color-light-gray);
 }
 
 .download-rectangle__white {
   width: 75%;
-  background-color: #fff;
+  background-color: var(--color-white);
 }
 
 .download-section__title {
@@ -376,18 +386,18 @@ display: block;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #000;
-  padding: 14px 20px;
+  background-color: var(--color-black);
+  padding: var(--download-btn-padding-vertical) var(--download-btn-padding-horizontal);
   text-decoration: none;
   font-weight: 600;
-  border-radius: 6px;
+  border-radius: var(--download-btn-border-radius);
   overflow: hidden;
-  transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow var(--transition-duration) var(--transition-timing);
 }
 
 .download-btn-black:hover {
-  background-color: #000;
-  box-shadow: 0 0 8px 2px #fff, 0 0 16px 4px var(--color-blue);
+  background-color: var(--color-black);
+  box-shadow: 0 0 8px 2px var(--color-white), 0 0 16px 4px var(--color-blue);
 }
 
 .download-btn-black img {
@@ -403,14 +413,14 @@ display: block;
 .registration-section {
   display: flex;
   justify-content: center;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-  padding: 0 4rem 0 var(--padding-left);
+  margin-top: var(--registration-margin);
+  margin-bottom: var(--registration-margin);
+  padding: 0 var(--registration-gap) 0 var(--padding-left);
 }
 
 .registration-box {
   display: flex;
-  gap: 5rem;
+  gap: var(--registration-gap);
 }
 
 .registration-item {
@@ -425,8 +435,8 @@ display: block;
 }
 
 .arrow-spacing-right {
-  margin-left: 5rem;
-  margin-right: 5rem;
+  margin-left: var(--arrow-spacing);
+  margin-right: var(--arrow-spacing);
 }
 
 .registration-text-arrow h2 {
@@ -445,7 +455,7 @@ display: block;
 }
 
 .registration-barra {
-  margin-top: 2rem;
+  margin-top: var(--registration-bar-margin-top);
   display: block;
   width: 158px;
   height: auto;

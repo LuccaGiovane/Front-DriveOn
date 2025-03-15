@@ -1,4 +1,3 @@
-/* Global resets, variables, and base styles */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 
 :root {
@@ -8,7 +7,9 @@
   /* Colors */
   --color-white: #fff;
   --color-black: #000;
+  --color-text-gray: #84819c;
   --color-gray: #5A5A5A;
+  --color-light-gray: #ccc;
   --color-dark: #333;
   --color-border: #eee;
   --color-purple: #5414a4;
@@ -16,38 +17,61 @@
   --color-darker-blue: #596fee;
   --color-lighter-blue: #2ce4fc;
 
-  /* Transition and size */
+  /* Spacing and sizing */
   --padding-left: 3rem;
   --spacing-20: 20px;
+  --spacing-60: 60px;
+  --margin-bottom-30: 30px;
   --font-size-base: 16px;
   --border-radius: 4px;
+  
+  /* Transition */
   --transition-duration: 0.3s;
   --transition-timing: ease-in-out;
   --gradient-angle: 45deg;
 
-  /* Variáveis específicas para o footer */
+  /* Buttons and specific elements */
+  --btn-padding-vertical: 15px;
+  --btn-padding-horizontal: 30px;
+  --btn-border-radius: 8px;
+  
+  --download-btn-padding-vertical: 14px;
+  --download-btn-padding-horizontal: 20px;
+  --download-btn-border-radius: 6px;
+
+  /* Specific sections */
+  --car-content-padding-vertical: 60px;
+  --car-content-padding-horizontal: 20px;
+  --safety-padding-left: 172px;
+
+  --registration-margin: 5rem;
+  --registration-gap: 5rem;
+  --arrow-spacing: 5rem;
+  --registration-bar-margin-top: 2rem;
+
+  /* Footer specific variables */
   --font-size-footer: 14px;
   --footer-horizontal-padding: 120px;
   --footer-max-width: 1200px;
   --footer-spacing-16: 16px;
   --footer-text-shadow: 0 0 8px var(--color-white), 0 0 12px var(--color-white);
   --footer-gap-columns: 50px;
-  --footer-social-gap: 15px;
+  --footer-social-gap: 30px;
 }
 
-
+/* Global resets */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Just to ensure that html and body occupy 100% of the viewport height */
+/* html and body occupy 100% of the viewport height */
 html, body {
   height: 100%;
 }
 
-/* Configure the body to use flexbox and organize elements in columns */
+/* Body configuration for using Flexbox and organizing into columns */
 body {
   font-family: var(--font-family);
   background-color: var(--color-white);
@@ -56,7 +80,7 @@ body {
   flex-direction: column;
 }
 
-/* The main content take up the available space to push the footer to the end */
+/* Main takes up the available space to push the footer to the end */
 main {
   flex: 1;
 }

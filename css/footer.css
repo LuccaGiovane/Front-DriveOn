@@ -1,5 +1,5 @@
 footer {
-    background: url('img/fundo-footer-teste-programador.png.jpg');
+    background: url('../img/fundo-footer-teste-programador.png.jpg');
     background-size: cover;
     padding: 90px 110px 40px 110px;
     color: var(--color-white);

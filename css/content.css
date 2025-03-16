@@ -100,7 +100,7 @@
   display: block;
   margin: 0;
   width: 120px;
-  height: auto;
+  height: 10px;
   margin-bottom: 2em;
 }
 
@@ -160,40 +160,43 @@
   color: var(--color-text-gray);
 }
 
-/* ======================= */
-/* Car on the side section */
-/* ======================= */
-
-.car-section {
+/* =========== */
+/* CAR section */
+/* =========== */
+.car-safety-section__car-block {
   display: flex;
-  align-items: center;   
-  background-color: var(--color-white); 
+  align-items: center;
+  background-color: var(--color-white);
   min-height: 100vh;
   padding: 0;
 }
 
 .car-section__image-col {
   flex: 0 0 50%;
+  position: relative;
+  z-index: 1;
 }
 
 .car-section__car-image {
-  width: 108%;
+  width: 95%;
   height: auto;
-  display: block; 
+  display: block;
 }
 
 .car-section__content-col {
-  flex: 1;            
-  max-width: 600px;   
+  flex: 1;
+  max-width: 600px;
   padding: var(--car-content-padding-vertical) var(--car-content-padding-horizontal);
   text-align: left;
+  position: relative;
+  left: -80px;
 }
 
 .car-section__barra-image {
   display: block;
   margin: 0 0 1em 0; 
   width: 120px;
-  height: auto;
+  height: 10px;
   margin-bottom: 6em;
 }
 
@@ -217,7 +220,9 @@
   color: var(--color-blue);
   font-weight: 600;
   font-size: 1.15rem;
-  transition: text-shadow var(--transition-duration) var(--transition-timing), color var(--transition-duration) var(--transition-timing);
+  transition:
+    color var(--transition-duration) var(--transition-timing),
+    text-shadow var(--transition-duration) var(--transition-timing);
 }
 
 .car-section__learn-more:hover {
@@ -226,16 +231,16 @@
 }
 
 /* ============== */
-/* Safety Section */
+/* SAFETY section */
 /* ============== */
-.safety-section {
+.car-safety-section__safety-block {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
   background-color: var(--color-white);
   padding: var(--spacing-60) 0 var(--spacing-60) var(--safety-padding-left);
   min-height: 100vh;
-  transform: translateY(-1rem);
+  transform: translateY(-15rem); 
 }
 
 .safety-section__content-col {
@@ -251,7 +256,7 @@
 
 .safety-section__content-col h2 {
   color: var(--color-purple);
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   margin-bottom: var(--spacing-20);
   line-height: 1.2;
 }
@@ -259,7 +264,7 @@
 .safety-section__barra-image {
   display: block;
   width: 120px;
-  height: auto;
+  height: 10px;
   margin-bottom: 2em;
   transform: translateY(-2rem);
 }
@@ -286,7 +291,7 @@
   z-index: 2;
 }
 
-.guide-link-wrapper .guide-link:hover {
+.guide-link:hover {
   color: var(--color-white);
   animation: glowTextGradient 2s infinite alternate;
 }
@@ -307,7 +312,13 @@
   color: var(--color-blue);
   font-weight: 600;
   font-size: 1.15rem;
-  transition: color var(--transition-duration) var(--transition-timing), text-shadow var(--transition-duration) var(--transition-timing);
+  display: inline-block;
+  position: relative;
+  top: 20px;
+  transition:
+    color var(--transition-duration) var(--transition-timing),
+    text-shadow var(--transition-duration) var(--transition-timing);
+    
 }
 
 .safety-section__learn-more:hover {
@@ -327,6 +338,34 @@
   display: block;
 }
 
+/* ======================== */
+/* Glow Effects - Keyframes */
+/* (caso exista no seu CSS) */
+/* ======================== */
+@keyframes glowTextGradient {
+  0% {
+    text-shadow: 
+      0 0 5px var(--color-blue),
+      0 0 10px var(--color-blue),
+      0 0 15px var(--color-purple),
+      0 0 20px var(--color-purple);
+  }
+  50% {
+    text-shadow: 
+      0 0 10px var(--color-purple),
+      0 0 20px var(--color-purple),
+      0 0 30px var(--color-blue),
+      0 0 40px var(--color-blue);
+  }
+  100% {
+    text-shadow: 
+      0 0 5px var(--color-blue),
+      0 0 10px var(--color-blue),
+      0 0 15px var(--color-purple),
+      0 0 20px var(--color-purple);
+  }
+}
+
 /* ==================== */
 /* Download App section */
 /* ==================== */
@@ -335,6 +374,7 @@
   position: relative;
   width: 100%;
   margin-bottom: 0;
+  margin-top: -10rem;
   overflow: hidden;
 }
 

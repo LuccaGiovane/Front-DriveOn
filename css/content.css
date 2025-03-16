@@ -245,7 +245,7 @@
 
 .safety-section__content-col {
   flex: 1;
-  max-width: 600px;
+  max-width: 750px;
   text-align: left;
   margin-right: var(--spacing-20);
 }
@@ -272,7 +272,7 @@
 .safety-section__content-col p {
   color: var(--color-text-gray);
   font-weight: bold;
-  font-size: 1.15rem;
+  font-size: 1.2rem;
   line-height: 1.4;
   margin-bottom: var(--spacing-20);
 }
@@ -333,7 +333,7 @@
 }
 
 .safety-section__image {
-  width: 121%;
+  width: 118%;
   height: auto;
   display: block;
 }
